@@ -5,4 +5,4 @@ The mod of the ever-famous ArmA 2 Modification, DayZ, DayZ Commune, is set to br
 
 Website: http://dayz-commune.weebly.com
 
-License and Credit: https://github.com/raginruffalo/DayZ-Commune/blob/master/License%20and%20Credit.md
+License and Credit: https://github.com/raginruffalo/DayZ-Commune/wiki/DayZ-License-and-Credit
