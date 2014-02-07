@@ -1,7 +1,7 @@
 Credit:
 =======
 
-Based of off DayZ mod, created by Dean Hall.*
+Based off DayZ mod, created by Dean Hall.*
 
 
 Licenses:
@@ -9,7 +9,7 @@ Licenses:
 
 Original DayZ Mod Share Alike License: http://www.bistudio.com/community/licenses/dayz-mod-license-share-alike
 
-Commune Content License: https://github.com/raginruffalo/DayZ-Commune/blob/master/Commune%20License.md
+Commune Content License: https://github.com/raginruffalo/DayZ-Commune/wiki/Commune-License
 
 
 *"DAYZ is a registered trademark of Bohemia Interactive a.s. 
