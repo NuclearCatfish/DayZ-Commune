@@ -31,8 +31,7 @@ public class DayZCommuneLauncher extends javax.swing.JFrame {
         launch = new javax.swing.JButton();
         exit = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
-        BrowseResult = new javax.swing.JTextField();
-        browse = new javax.swing.JButton();
+        OADirectory = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("DayZ Commune Launcher");
@@ -60,17 +59,11 @@ public class DayZCommuneLauncher extends javax.swing.JFrame {
 
         jLabel1.setText("*Hover over a button to see it's function");
 
-        BrowseResult.setText("ArmA 2 OA Directory");
-        BrowseResult.addActionListener(new java.awt.event.ActionListener() {
+        OADirectory.setText("ArmA 2 Operation Arrowhead Directory");
+        OADirectory.setToolTipText("Type your ArmA 2 OA Directory in this box.");
+        OADirectory.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                BrowseResultActionPerformed(evt);
-            }
-        });
-
-        browse.setText("Browse");
-        browse.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                browseActionPerformed(evt);
+                OADirectoryActionPerformed(evt);
             }
         });
 
@@ -93,15 +86,12 @@ public class DayZCommuneLauncher extends javax.swing.JFrame {
                                 .addComponent(logo, javax.swing.GroupLayout.PREFERRED_SIZE, 371, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(layout.createSequentialGroup()
                                 .addContainerGap()
-                                .addComponent(jLabel1)))
-                        .addGap(0, 0, Short.MAX_VALUE)))
+                                .addComponent(jLabel1))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(197, 197, 197)
+                                .addComponent(OADirectory, javax.swing.GroupLayout.PREFERRED_SIZE, 371, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(0, 220, Short.MAX_VALUE)))
                 .addContainerGap())
-            .addGroup(layout.createSequentialGroup()
-                .addGap(166, 166, 166)
-                .addComponent(BrowseResult, javax.swing.GroupLayout.PREFERRED_SIZE, 373, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(browse)
-                .addContainerGap(176, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -112,11 +102,9 @@ public class DayZCommuneLauncher extends javax.swing.JFrame {
                 .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(jLabel1)
-                .addGap(81, 81, 81)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(BrowseResult, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(browse))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 198, Short.MAX_VALUE)
+                .addGap(48, 48, 48)
+                .addComponent(OADirectory, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 234, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(launch, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(exit, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -130,14 +118,9 @@ public class DayZCommuneLauncher extends javax.swing.JFrame {
         System.exit(0);
     }//GEN-LAST:event_exitActionPerformed
 
-    private void browseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_browseActionPerformed
-            FileBrowser FileBrowser = new FileBrowser();
-            FileBrowser.setVisible(true);
-    }//GEN-LAST:event_browseActionPerformed
-
-    private void BrowseResultActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BrowseResultActionPerformed
+    private void OADirectoryActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_OADirectoryActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_BrowseResultActionPerformed
+    }//GEN-LAST:event_OADirectoryActionPerformed
 
     /**
      * @param args the command line arguments
@@ -175,8 +158,7 @@ public class DayZCommuneLauncher extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JTextField BrowseResult;
-    private javax.swing.JButton browse;
+    private javax.swing.JTextField OADirectory;
     private javax.swing.JButton exit;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JSeparator jSeparator1;

@@ -42,7 +42,7 @@
                       <EmptySpace max="32767" attributes="0"/>
                       <Component id="launch" min="-2" pref="75" max="-2" attributes="0"/>
                   </Group>
-                  <Group type="102" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="0" attributes="0">
                               <EmptySpace min="-2" pref="199" max="-2" attributes="0"/>
@@ -52,18 +52,15 @@
                               <EmptySpace max="-2" attributes="0"/>
                               <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
                           </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="197" max="-2" attributes="0"/>
+                              <Component id="OADirectory" min="-2" pref="371" max="-2" attributes="0"/>
+                          </Group>
                       </Group>
-                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                      <EmptySpace min="0" pref="220" max="32767" attributes="0"/>
                   </Group>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
-          </Group>
-          <Group type="102" alignment="0" attributes="0">
-              <EmptySpace min="-2" pref="166" max="-2" attributes="0"/>
-              <Component id="BrowseResult" min="-2" pref="373" max="-2" attributes="0"/>
-              <EmptySpace type="separate" max="-2" attributes="0"/>
-              <Component id="browse" min="-2" max="-2" attributes="0"/>
-              <EmptySpace pref="176" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -76,12 +73,9 @@
               <Component id="jSeparator1" min="-2" max="-2" attributes="0"/>
               <EmptySpace type="separate" max="-2" attributes="0"/>
               <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
-              <EmptySpace min="-2" pref="81" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="BrowseResult" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="browse" alignment="3" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace pref="198" max="32767" attributes="0"/>
+              <EmptySpace min="-2" pref="48" max="-2" attributes="0"/>
+              <Component id="OADirectory" min="-2" max="-2" attributes="0"/>
+              <EmptySpace pref="234" max="32767" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="launch" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
                   <Component id="exit" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
@@ -141,20 +135,13 @@
         <Property name="text" type="java.lang.String" value="*Hover over a button to see it&apos;s function"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="BrowseResult">
+    <Component class="javax.swing.JTextField" name="OADirectory">
       <Properties>
-        <Property name="text" type="java.lang.String" value="ArmA 2 OA Directory"/>
+        <Property name="text" type="java.lang.String" value="ArmA 2 Operation Arrowhead Directory"/>
+        <Property name="toolTipText" type="java.lang.String" value="Type your ArmA 2 OA Directory in this box."/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="BrowseResultActionPerformed"/>
-      </Events>
-    </Component>
-    <Component class="javax.swing.JButton" name="browse">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="Browse"/>
-      </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="browseActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="OADirectoryActionPerformed"/>
       </Events>
     </Component>
   </SubComponents>
